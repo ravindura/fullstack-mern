@@ -48,7 +48,8 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 backdrop-blur-sm 
-        bg-linear-to-r from-gray-50 via-indigo-100 to-purple-100 ${
+        // 👇 COOL / PROFESSIONAL GRADIENT IMPLEMENTED
+        bg-linear-to-r from-blue-50/70 via-white/70 to-indigo-100/70 ${ 
         scrolled
           ? 'shadow-xl border-b border-indigo-300'
           : 'shadow-lg' 
@@ -64,7 +65,7 @@ export default function Header() {
               text-indigo-800 hover:text-indigo-900`}
             aria-label="Home"
           >
-            MyApp
+            Taskify
           </Link>
 
           <nav className="hidden md:flex items-center gap-1" role="navigation">
